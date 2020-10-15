@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "7E6F3465-C5B2-4541-9BFB-44303C541A89",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:EverythingCoreData.xcodeproj",
+        "identifier" : "E77AC8AF2537F7C60054B8B4",
+        "name" : "EverythingCoreDataTests"
+      }
+    }
+  ],
+  "version" : 1
+}

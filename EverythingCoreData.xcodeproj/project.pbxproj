@@ -36,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E70860E525380F8E00EBDF0A /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
+		E7445695253812A700711964 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		E77AC8972537F7C30054B8B4 /* EverythingCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EverythingCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77AC89A2537F7C30054B8B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E77AC89C2537F7C30054B8B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		E77AC88E2537F7C30054B8B4 = {
 			isa = PBXGroup;
 			children = (
+				E7445695253812A700711964 /* .swiftlint.yml */,
 				E77AC8992537F7C30054B8B4 /* EverythingCoreData */,
 				E77AC8B32537F7C60054B8B4 /* EverythingCoreDataTests */,
 				E77AC8BE2537F7C60054B8B4 /* EverythingCoreDataUITests */,
@@ -101,12 +104,12 @@
 		E77AC8992537F7C30054B8B4 /* EverythingCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				E77AC8D02537FB450054B8B4 /* Features */,
 				E77AC8D72537FBE40054B8B4 /* Extensions */,
 				E77AC8D62537FBDE0054B8B4 /* Helper */,
 				E77AC8D42537FBAE0054B8B4 /* Resources */,
 				E77AC8D22537FB760054B8B4 /* App */,
 				E77AC8D12537FB5C0054B8B4 /* CoreData */,
-				E77AC8D02537FB450054B8B4 /* Features */,
 				E77AC8AB2537F7C50054B8B4 /* Info.plist */,
 			);
 			path = EverythingCoreData;
@@ -184,6 +187,7 @@
 		E77AC8D62537FBDE0054B8B4 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				E70860E525380F8E00EBDF0A /* TestPlan.xctestplan */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -205,12 +209,15 @@
 				E77AC8932537F7C30054B8B4 /* Sources */,
 				E77AC8942537F7C30054B8B4 /* Frameworks */,
 				E77AC8952537F7C30054B8B4 /* Resources */,
+				E77AC8DE2537FD180054B8B4 /* SwiftLint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = EverythingCoreData;
+			packageProductDependencies = (
+			);
 			productName = EverythingCoreData;
 			productReference = E77AC8972537F7C30054B8B4 /* EverythingCoreData.app */;
 			productType = "com.apple.product-type.application";
@@ -282,6 +289,8 @@
 				Base,
 			);
 			mainGroup = E77AC88E2537F7C30054B8B4;
+			packageReferences = (
+			);
 			productRefGroup = E77AC8982537F7C30054B8B4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -319,6 +328,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E77AC8DE2537FD180054B8B4 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E77AC8932537F7C30054B8B4 /* Sources */ = {
